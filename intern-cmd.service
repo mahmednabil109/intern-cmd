@@ -1,0 +1,10 @@
+[Unit]
+Description=Intern Cmd daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/intern-cmd
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
